@@ -184,4 +184,4 @@ async def fromage(ctx):
     await ctx.channel.send(f"Harold sexy")
     await ctx.channel.send(f"https://hungarytoday.hu/wp-content/uploads/2018/02/18ps27.jpg")
 
-bot.run("ODU3MzczNDkwMTQyNzczMzI5.YNOpSQ.3447AaG4gAkf2DzK73Yj8mgIVm4")
+bot.run("token")
