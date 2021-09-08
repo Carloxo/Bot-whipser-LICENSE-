@@ -23,7 +23,7 @@ async def help(ctx):
 @bot.command()
 @commands.has_permissions(kick_members = True)
 async def clear(ctx , amount=5):
-	await ctx.channel.purge(limit=amount + 1000)
+	await ctx.channel.purge(limit=amount + 1)
 	await ctx.channel.send(f"j'ai suprimer {amount} messages")
 
 async def createMutedRole(ctx):
@@ -178,7 +178,7 @@ async def china(ctx, *text):
 
 
 @bot.command()
-@commands.check(isOwner)
+@commands.is_nsfw()
 async def fromage(ctx):
 
     await ctx.channel.send(f"Harold sexy")
