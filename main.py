@@ -22,8 +22,8 @@ async def help(ctx):
 
 @bot.command()
 @commands.has_permissions(kick_members = True)
-async def clear(ctx , amount=5):
-	await ctx.channel.purge(limit=amount + 1)
+async def clear(ctx , amount=1):
+	await ctx.channel.purge(limit=amount + 1000)
 	await ctx.channel.send(f"j'ai suprimer {amount} messages")
 
 async def createMutedRole(ctx):
